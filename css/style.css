@@ -1,0 +1,128 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+.accordion-toggle {
+	cursor: pointer;
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+}
+
+.accordion-toggle:nth-of-type(1) {
+	background-image: url("../img/teddy-kelley-toggle.jpg");
+	background-size: cover;
+	height: 6%;
+}
+
+.accordion-toggle:nth-of-type(2) {
+	background-image: url("../img/john-salzarulo-toggle.jpg");
+	background-size: cover;
+	height: 6%;
+}
+
+.accordion-toggle:nth-of-type(3) {
+	background-image: url("../img/luca-bravo-toggle.jpg");
+	background-size: cover;
+	height: 6%;
+}
+
+.accordion-toggle:nth-of-type(4) {
+	background-image: url("../img/freddy-castro-toggle.jpg");
+	background-size: cover;
+	height: 6%;
+}
+
+.accordion-content:nth-of-type(1) {
+	background-image: url("../img/teddy-kelley.jpg");
+	background-size: cover;
+}
+
+.accordion-content:nth-of-type(2) {
+	background-image: url("../img/john-salzarulo.jpg");
+	background-size: cover;
+}
+
+.accordion-content:nth-of-type(3) {
+	background-image: url("../img/luca-bravo.jpg");
+	background-size: cover;
+}
+
+.accordion-content:nth-of-type(4) {
+	background-image: url("../img/freddy-castro.jpg");
+	background-size: cover;
+}
+
+.accordion-toggle, h1 {
+	color: #FFFFFF;
+	text-align: center;
+	font-style: strong;
+}
+
+.accordion-content {
+	display: none;
+	height: 90%;
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+}
+
+.accordion-content.default {
+	display: block;
+	height: 90%;
+	margin: 0px;
+	border: 0px;
+}
+
+p {
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.accordion-content > h1 {
+	color: #FFFFFF;
+	font-size: 200px;
+	font-family: 'Lobster', cursive;
+	margin: 0px;
+}
+
+#contactform {
+	padding-top: 5%;
+}
+
+.form-group {
+	padding-top: 50px;
+	width: 60%;
+	margin: auto;
+}
+
+.btn {
+	margin: auto;
+}
+
+ul {
+	list-style: none;
+	padding-top: 5%;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-align-content: center;
+	align-content: center;
+}
+
+li {
+	display: inline-block;
+	margin: auto;
+}
+
+h2 {
+	display: inline-block;
+	margin: auto;
+	font-family: 'Raleway', sans-serif;
+	font-size: 50px;
+	color: #FFFFFF;
+}
