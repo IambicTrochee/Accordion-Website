@@ -1,54 +1,59 @@
 <html>
 
 <head>
- 	<title>Title</title>
- 	<link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet">
+	<title>Title</title>
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet">
 	<link href='css/bootstrap.min.css' rel='stylesheet'>
 	<link href='css/style.css'rel='stylesheet'>
 </head>
 
 <body>
-  <div id="accordion">
-    <h1 class="accordion-toggle">v</h1>
-    <div class="accordion-content default">
-    	<h1>Sally Luong</h1>
-    	<ul>
-    		<li><h2>DEVELOPER</h2></li>
-    		<li><h2>LINGUIST</h2></li>
-    		<li><h2>CREATIVE</h2></li>
-		</ul>
-      	<p>Cras malesuada ultrices augue molestie risus.</p>
-    </div>
-    <h1 class="accordion-toggle">v</h1>
-    <div class="accordion-content">
-    	<h1>Profile</h1>
-    	<p>Lorem ipsum dolor sit amet mauris eu turpis.</p>
-    </div>
-    <h1 class="accordion-toggle">v</h1>
-    <div class="accordion-content">
-    	<h1>Portfolio</h1>
-     	<p>Vivamus facilisisnibh scelerisque laoreet.</p>
-    </div>
-    <h1 class="accordion-toggle">v</h1>
-    <div class="accordion-content">
-    	<h1>Contact me</h1>
-      <form method="POST" id="contactform">
-			<div class="form-group">
-  				<input type="email" name="email" placeholder="Your email" class="form-control">
-			</div>
-			<div class="form-group">
-  				<textarea name="message" placeholder="Your message" class="form-control" rows="3"></textarea>
-  			</div>
-  			<div class="form-group">
-  				<button type="submit" class="btn btn-default">Send</button>
-			</div>
-			<input type="text" name="_gotcha" style="display:none" />
-		</form>
-    </div>
-  </div>
-  <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
+	<div id="accordion">
+		<!-- Home Panel -->
+		<h2 class="accordion-toggle default">HOME</h1>
+		<div class="accordion-content default">
+			<h1>Sally Luong</h1>
+			<ul>
+				<li><h2>DEVELOPER</h2></li>
+				<li><h2>LINGUIST</h2></li>
+				<li><h2>CREATIVE</h2></li>
+			</ul>
+			<p>Cras malesuada ultrices augue molestie risus.</p>
+		</div>
+		<!-- Profile Panel -->
+		<h2 class="accordion-toggle">PROFILE</h1>
+		<div class="accordion-content">
+			<h1>Profile</h1>
+			<p>Lorem ipsum dolor sit amet mauris eu turpis.</p>
+		</div>
+		<!-- Portfolio Panel -->
+		<h2 class="accordion-toggle">PORTFOLIO</h1>
+		<div class="accordion-content">
+			<h1>Portfolio</h1>
+			<p>Vivamus facilisisnibh scelerisque laoreet.</p>
+		</div>
+		<!-- Contact Panel -->
+		<h2 class="accordion-toggle">CONTACT</h1>
+		<div class="accordion-content">
+			<h1>Contact me</h1>
+			<form method="POST" id="contactform">
+				<div class="form-group">
+					<input type="email" name="email" placeholder="Your email" class="form-control">
+				</div>
+				<div class="form-group">
+					<textarea name="message" placeholder="Your message" class="form-control" rows="5"></textarea>
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn btn-default">Send</button>
+				</div>
+				<input type="text" name="_gotcha" style="display:none" />
+			</form>
+		</div>
+	</div>
+	<!-- Scripts: JQuery, Bootstrap, Custom -->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 
 </html>
