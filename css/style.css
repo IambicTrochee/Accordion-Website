@@ -1,9 +1,3 @@
-body {
-	padding: 0px;
-	margin: 0px;
-	border: 0px;
-}
-
 /* Toggle styling */
 
 .accordion-toggle, h2 {
@@ -11,35 +5,33 @@ body {
 	text-align: center;
 	font-style: strong;
 	font-family: Raleway, sans-serif;
-	line-height: 4%;
-	padding-top: 2%;
-	padding-bottom: 2%;
+	font-size: 60px;
+	line-height: 6%;
+	padding-top: 3%;
+	padding-bottom: 3%;
 	margin: 0px;
 	border: 0px;
 	width: 100%;
 	cursor: pointer;
+	background-size: cover;
 }
 
 /* Toggle backgrounds */
 
 .accordion-toggle:nth-of-type(1) {
 	background-image: url("../img/teddy-kelley-toggle.jpg");
-	background-size: cover;
 }
 
 .accordion-toggle:nth-of-type(2) {
-	background-image: url("../img/john-salzarulo-toggle.jpg");
-	background-size: cover;
+	background-image: url("../img/ales-krivec-toggle.jpg");
 }
 
 .accordion-toggle:nth-of-type(3) {
-	background-image: url("../img/luca-bravo-toggle.jpg");
-	background-size: cover;
+	background-image: url("../img/fabien-barral-toggle.jpg");
 }
 
 .accordion-toggle:nth-of-type(4) {
 	background-image: url("../img/freddy-castro-toggle.jpg");
-	background-size: cover;
 }
 
 /* Hides default toggle at start */
@@ -48,65 +40,90 @@ body {
 	display: none;
 }
 
+
+
+
+
+/* Content panel styling */
 /* Panel backgrounds */
 
 .accordion-content:nth-of-type(1) {
 	background-image: url("../img/teddy-kelley.jpg");
-	background-size: cover;
 }
 
 .accordion-content:nth-of-type(2) {
-	background-image: url("../img/john-salzarulo.jpg");
-	background-size: cover;
+	background-image: url("../img/ales-krivec.jpg");
 }
 
 .accordion-content:nth-of-type(3) {
-	background-image: url("../img/luca-bravo.jpg");
-	background-size: cover;
+	background-image: url("../img/fabien-barral.jpg");
 }
 
 .accordion-content:nth-of-type(4) {
 	background-image: url("../img/freddy-castro.jpg");
-	background-size: cover;
 }
 
 /* Hides panels at start */
 
 .accordion-content {
 	display: none;
-	height: 80%;
+	background-size: cover;
+	background-position: center;
+	height: 90%;
+	width: 100%;
+	padding: 0px;
 	margin: 0px;
 	border: 0px;
-	padding: 0px;
 }
 
 /* Shows default panel at start */
 
 .accordion-content.default {
 	display: block;
-	height: 80%;
+	background-size: cover;
+	background-position: center;
+	height: 90%;
+	width: 100%;
+	padding: 0px;
 	margin: 0px;
 	border: 0px;
 }
 
-/* Forms styling */
 
-#contactform {
-	padding-top: 5%;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	height: 50%;
+
+
+/* 
+
+
+
+Content styling
+
+
+
+*/
+
+body {
+	background-color: #000000;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
 }
 
-.form-group {
-	width: 60%;
-	margin: auto;
+.row {
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
 }
 
-.form-group > textarea {
-	height: 30%;
+p {
+	font-family: Raleway, sans-serif;
+	font-size: 20px;
+	color: #FFFFFF;
 }
+
+
+
+
 
 /* Panel h1 header styling */
 .accordion-content > h1 {
@@ -115,66 +132,116 @@ body {
 	font-family: 'Lobster', cursive;
 	text-align: center;
 	margin: 0px;
+	margin-bottom: 5%;
 }
 
-/* Panel paragraph styling, vertically centered */
-p {
-	font-family: Raleway, sans-serif;
-	font-size: 20px;
+
+
+
+
+/* Forms styling */
+/* margin: auto; used for horizontal centering*/
+/* flexbox used for vertical centering*/
+.form-group {
+	width: 60%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 10%;
+}
+
+
+
+
+
+/* Panel paragraph styling, vertically centered with flexbox*/
+.profile-summary > p {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 20%;
+	padding: 20px;
+	margin: 0px;
+	border: 0px;
+}
+
+
+
+
+
+/* Used on home page */
+h3 {
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 50px;
 	color: #FFFFFF;
+}
+
+.traits {
+	margin-top: 40%;
+}
+
+
+
+
+
+/* Profile picture styling */
+
+#portrait {
+	border-radius: 125px;	
+	width: 250px;
+	height: 250px;
+	margin: auto;
+}
+
+.picture {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	height: 20%;
 }
 
-@media screen and (max-width: 992px) {
-	ul {
-		list-style: none;
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		height: 60%;
-		text-align: center;
-	}
 
-	li {
-		margin-top: 10%;
-	}
+
+
+
+/* Portfolio styling */
+.portfolio > * > * {
+	text-align: center;
 }
 
-h3 {
+.portfolio-thumbnail {
+	display: block;
+	border-radius: 125px;
+	width: 250px;
+	height: 250px;
 	margin: auto;
-	font-family: 'Raleway', sans-serif;
-	font-size: 50px;
+}
+
+.portfolio > * > h4 {
+	font-family: Raleway, sans-serif;
+	font-size: 30px;
 	color: #FFFFFF;
 }
 
-#portrait {
-	width: 250px;
-	height: 250px;
-	border-radius: 125px;
-	display: block;
-	margin: auto;
-	margin-top: 30px;
-}
+
+
+
+
+/* Responsive, mobile first design
+Styling for screens wider than 992 px*/
 
 @media screen and (min-width: 992px) {
-	p {
+	.traits {
+		margin-top: 0;
+	}
+	/* Larger block height on larger screens */
+	.profile-summary > p {
 		height: 40%;
+		margin: 0px;
 	}
-	ul {
-		list-style: none;
-		padding-top: 5%;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-flex-wrap: wrap;
-		flex-wrap: wrap;
-		-webkit-align-content: center;
-		align-content: center;
-	}
-	li {
-		display: inline-block;
-		margin: auto;
+	.picture {
+		height: 40%;
 	}
 }

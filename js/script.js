@@ -1,4 +1,5 @@
 //adapted from code by david@uniondesign.ca
+//http://uniondesign.ca/simple-accordion-without-jquery-ui/
 
 $(document).ready(function($) {
     $('#accordion').find('.accordion-toggle').click(function(){
