@@ -1,14 +1,22 @@
-/* Toggle styling */
+/*
 
+
+
+Accordion styling
+
+
+
+*/
+
+/* Toggle styling */
 .accordion-toggle, h2 {
 	color: #FFFFFF;
 	text-align: center;
-	font-style: strong;
 	font-family: Raleway, sans-serif;
-	font-size: 60px;
-	line-height: 6%;
-	padding-top: 3%;
-	padding-bottom: 3%;
+	font-size: 5vh;
+	line-height: 6vh;
+	padding-top: 1.5vh;
+	padding-bottom: 1.5vh;
 	margin: 0px;
 	border: 0px;
 	width: 100%;
@@ -17,7 +25,6 @@
 }
 
 /* Toggle backgrounds */
-
 .accordion-toggle:nth-of-type(1) {
 	background-image: url("../img/teddy-kelley-toggle.jpg");
 }
@@ -35,9 +42,11 @@
 }
 
 /* Hides default toggle at start */
-
 .accordion-toggle.default {
 	display: none;
+	border: 0px;
+	margin: 0px;
+	border: 0px;
 }
 
 
@@ -45,8 +54,29 @@
 
 
 /* Content panel styling */
-/* Panel backgrounds */
+.accordion-content {
+	display: none;		/* Hides panels at start */
+	background-size: cover;
+	background-position: center;
+	min-height: 90vh;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
 
+.accordion-content.default {
+	display: block;		/* Shows default panel at start */
+	background-size: cover;
+	background-position: center;
+	min-height: 90.0vh;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+/* Panel backgrounds */
 .accordion-content:nth-of-type(1) {
 	background-image: url("../img/teddy-kelley.jpg");
 }
@@ -63,31 +93,6 @@
 	background-image: url("../img/freddy-castro.jpg");
 }
 
-/* Hides panels at start */
-
-.accordion-content {
-	display: none;
-	background-size: cover;
-	background-position: center;
-	height: 90%;
-	width: 100%;
-	padding: 0px;
-	margin: 0px;
-	border: 0px;
-}
-
-/* Shows default panel at start */
-
-.accordion-content.default {
-	display: block;
-	background-size: cover;
-	background-position: center;
-	height: 90%;
-	width: 100%;
-	padding: 0px;
-	margin: 0px;
-	border: 0px;
-}
 
 
 
@@ -109,53 +114,41 @@ body {
 	border: 0px;
 }
 
-.row {
-	border: 0px;
-	margin: 0px;
-	padding: 0px;
-}
-
 p {
 	font-family: Raleway, sans-serif;
 	font-size: 20px;
 	color: #FFFFFF;
 }
 
+.wrapper {
+	border: 0px;
+	margin: 0px;
+	padding: 10px;
+}
+
+h3 {
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 5vh;
+	color: #FFFFFF;
+}
 
 
 
-
-/* Panel h1 header styling */
+/* Panel h1 header styling, font size adjusts to 15% of viewport height */
 .accordion-content > h1 {
 	color: #FFFFFF;
-	font-size: 200px;
+	font-size: 15.0vh;
 	font-family: 'Lobster', cursive;
 	text-align: center;
 	margin: 0px;
-	margin-bottom: 5%;
 }
 
 
 
 
 
-/* Forms styling */
-/* margin: auto; used for horizontal centering*/
-/* flexbox used for vertical centering*/
-.form-group {
-	width: 60%;
-	margin: auto;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	height: 10%;
-}
-
-
-
-
-
-/* Panel paragraph styling, vertically centered with flexbox*/
+/* Panel paragraph styling, vertically centered with flexbox
 .profile-summary > p {
 	display: flex;
 	justify-content: center;
@@ -165,21 +158,25 @@ p {
 	margin: 0px;
 	border: 0px;
 }
+*/
 
 
 
 
+/* Mobile layout of content */
+@media screen and (max-width: 992px) {
+	ul {
+		list-style: none;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		padding: 0px;
+	}
 
-/* Used on home page */
-h3 {
-	text-align: center;
-	font-family: 'Raleway', sans-serif;
-	font-size: 50px;
-	color: #FFFFFF;
-}
-
-.traits {
-	margin-top: 40%;
+	li {
+		margin-top: 5vh;
+		padding: 0px;
+	}
 }
 
 
@@ -187,19 +184,12 @@ h3 {
 
 
 /* Profile picture styling */
-
 #portrait {
-	border-radius: 125px;	
-	width: 250px;
-	height: 250px;
+	display: block;
+	border-radius: 10vh;	
+	width: 20vh;
+	height: 20vh;
 	margin: auto;
-}
-
-.picture {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	height: 20%;
 }
 
 
@@ -207,40 +197,73 @@ h3 {
 
 
 /* Portfolio styling */
-.portfolio > * > * {
-	text-align: center;
-}
-
 .portfolio-thumbnail {
 	display: block;
-	border-radius: 125px;
-	width: 250px;
-	height: 250px;
+	border-radius: 10vh;
+	width: 20vh;
+	height: 20vh;
 	margin: auto;
+	margin-top: 5vh;
 }
 
 .portfolio > * > h4 {
 	font-family: Raleway, sans-serif;
 	font-size: 30px;
 	color: #FFFFFF;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+.portfolio > * > * {
+	text-align: center;	/* Aligns h4 and p elements at center*/
+}
+
+
+
+
+/* Forms styling */
+.form-group {
+	width: 80vw;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 10vh;
 }
 
 
 
 
 
-/* Responsive, mobile first design
-Styling for screens wider than 992 px*/
+/* Changes to styling for screens wider than 992 px*/
 
 @media screen and (min-width: 992px) {
-	.traits {
-		margin-top: 0;
+	.accordion-content > h1 {
+		font-size: 20vh;
+	}
+	ul {
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		align-content: center;
+		max-height: 50.0vh;
+		padding: 0px;
+	}
+	li {
+		display: inline-block;
+		margin: auto;
+		padding: 0px;
+	}
+	.form-group {
+		width: 60vw;	/* Smaller width percentage */
 	}
 	/* Larger block height on larger screens */
 	.profile-summary > p {
 		height: 40%;
 		margin: 0px;
 	}
+
 	.picture {
 		height: 40%;
 	}
