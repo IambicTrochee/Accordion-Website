@@ -4,9 +4,12 @@
 	<title>Title</title>
 	<!-- Enables Formspreee -->
 	<meta name="referrer" content="origin">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Links to external stylesheets: Google Fonts, Bootstrap, Custom -->
 	<link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet">
+	<!--
 	<link href='css/bootstrap.min.css' rel='stylesheet'>
+	-->
 	<link href='css/style.css'rel='stylesheet'>
 </head>
 
@@ -17,35 +20,26 @@
 		<h2 class="accordion-toggle default">HOME</h1>
 		<div class="accordion-content default">
 			<h1>Sally Luong</h1>
-			<div class="row traits">
-				<div class="col-xs-12 col-sm-12 col-md-4">
-					<h3>DEVELOPER</h3>
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-4">
-					<h3>LINGUIST</h3>
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-4">
-					<h3>CAT PERSON</h3>
-				</div>
-			</div>
+			<ul>
+				<li><h3>DEVELOPER</h3></li>
+				<li><h3>LINGUIST</h3></li>
+				<li><h3>CAT PERSON</h3></li>
+  			</ul>
 		</div>
 		<!-- Profile Panel -->
 		<h2 class="accordion-toggle">PROFILE</h1>
 		<div class="accordion-content">
 			<h1>Profile</h1>
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-5 picture">
-					<img src="img/portrait.jpg" alt="Picture of Sally Luong" id="portrait">
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-7 profile-summary">
-					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-				</div>
+			<img src="img/portrait.jpg" alt="Picture of Sally Luong" id="portrait">
+			<div class="profile-summary">
+				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 			</div>
 		</div>
 		<!-- Portfolio Panel -->
 		<h2 class="accordion-toggle">PORTFOLIO</h1>
 		<div class="accordion-content">
 			<h1>Portfolio</h1>
+			<!--
 			<div class="row portfolio">
 				<div class="col-xs-12 col-sm-6 col-md-4">
 					<a href="http://www.ryan-oriordan.com/">
@@ -66,7 +60,28 @@
 					<h4>Future projects</h4>
 					<p>Links to future projects can be found here.</p>
 				</div>
-			</div>
+			</div> -->
+			<ul class="portfolio">
+				<li>
+					<a href="http://www.ryan-oriordan.com/">
+						<img src="img/ror-portrait.jpg" alt="Ryan O'Riordan website link" class="portfolio-thumbnail">
+					</a>
+					<h4>www.ryan-oriordan.com</h4>
+					<p>A website made for an independent musician.</p>
+				</li>
+				<li>
+					<a href="http://www.github.com/IambicTrochee">
+						<img src="img/gh-logo.png" alt="GitHub link" class="portfolio-thumbnail">
+					</a>
+					<h4>GitHub</h4>
+					<p>Other technical projects can be found on my GitHub profile.</p>
+				</li>
+				<li>
+					<img src="img/etc-thumbnail.png" alt="Ellipses" class="portfolio-thumbnail">
+					<h4>Future projects</h4>
+					<p>Links to future projects will be posted here.</p>
+				</li>
+			</ul>
 		</div>
 		<!-- Contact Panel -->
 		<h2 class="accordion-toggle">CONTACT</h1>
@@ -88,7 +103,9 @@
 	</div>
 	<!-- Scripts: JQuery, Bootstrap, Custom -->
 	<script src="js/jquery-2.1.4.min.js"></script>
+	<!--
 	<script src="js/bootstrap.min.js"></script>
+	-->
 	<script src="js/script.js"></script>
 </body>
 

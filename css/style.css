@@ -5,7 +5,7 @@
 	text-align: center;
 	font-style: strong;
 	font-family: Raleway, sans-serif;
-	font-size: 60px;
+	font-size: 5vh;
 	line-height: 6%;
 	padding-top: 3%;
 	padding-bottom: 3%;
@@ -69,7 +69,8 @@
 	display: none;
 	background-size: cover;
 	background-position: center;
-	height: 90%;
+	min-height: 90%;
+	max-height: 200%;
 	width: 100%;
 	padding: 0px;
 	margin: 0px;
@@ -82,7 +83,7 @@
 	display: block;
 	background-size: cover;
 	background-position: center;
-	height: 90%;
+	min-height: 90.0vh;
 	width: 100%;
 	padding: 0px;
 	margin: 0px;
@@ -128,11 +129,11 @@ p {
 /* Panel h1 header styling */
 .accordion-content > h1 {
 	color: #FFFFFF;
-	font-size: 200px;
+	font-size: 15.0vh;
 	font-family: 'Lobster', cursive;
 	text-align: center;
 	margin: 0px;
-	margin-bottom: 5%;
+	margin-bottom: 5vh;
 }
 
 
@@ -178,8 +179,19 @@ h3 {
 	color: #FFFFFF;
 }
 
-.traits {
-	margin-top: 40%;
+@media screen and (max-width: 992px) {
+	ul {
+		list-style: none;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		height: 60vh;
+		text-align: center;
+	}
+
+	li {
+		margin-top: 5vh;
+	}
 }
 
 
@@ -189,9 +201,9 @@ h3 {
 /* Profile picture styling */
 
 #portrait {
-	border-radius: 125px;	
-	width: 250px;
-	height: 250px;
+	border-radius: 75px;	
+	width: 150px;
+	height: 150px;
 	margin: auto;
 }
 
@@ -213,9 +225,9 @@ h3 {
 
 .portfolio-thumbnail {
 	display: block;
-	border-radius: 125px;
-	width: 250px;
-	height: 250px;
+	border-radius: 10vh;
+	width: 20vh;
+	height: 20vh;
 	margin: auto;
 }
 
@@ -223,6 +235,9 @@ h3 {
 	font-family: Raleway, sans-serif;
 	font-size: 30px;
 	color: #FFFFFF;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
 }
 
 
@@ -233,8 +248,20 @@ h3 {
 Styling for screens wider than 992 px*/
 
 @media screen and (min-width: 992px) {
-	.traits {
-		margin-top: 0;
+	ul {
+		list-style: none;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-webkit-align-content: center;
+		align-content: center;
+		max-height: 50.0vh;
+	}
+	li {
+		display: inline-block;
+		margin: auto;
+		width: 33.0vh;
 	}
 	/* Larger block height on larger screens */
 	.profile-summary > p {
