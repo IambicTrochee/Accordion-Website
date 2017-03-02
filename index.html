@@ -5,11 +5,8 @@
 	<!-- Enables Formspreee -->
 	<meta name="referrer" content="origin">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Links to external stylesheets: Google Fonts, Bootstrap, Custom -->
+	<!-- Links to external stylesheets: Google Fonts, Custom -->
 	<link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet">
-	<!--
-	<link href='css/bootstrap.min.css' rel='stylesheet'>
-	-->
 	<link href='css/style.css'rel='stylesheet'>
 </head>
 
@@ -32,19 +29,15 @@
 		<h2 class="accordion-toggle">PROFILE</h1>
 		<div class="accordion-content">
 			<h1>Profile</h1>
-			<!--
-			<img src="img/portrait.jpg" alt="Picture of Sally Luong" id="portrait">
-			<div class="profile-summary">
-				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-			</div>
-			-->
 			<div class="wrapper">
 				<ul>
 					<li>
 						<img src="img/portrait.jpg" alt="Picture of Sally Luong" id="portrait">
 					</li>
 					<li>
-						<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+						<div class="profile-summary">
+							<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -53,28 +46,6 @@
 		<h2 class="accordion-toggle">PORTFOLIO</h1>
 		<div class="accordion-content">
 			<h1>Portfolio</h1>
-			<!--
-			<div class="row portfolio">
-				<div class="col-xs-12 col-sm-6 col-md-4">
-					<a href="http://www.ryan-oriordan.com/">
-						<img src="img/ror-portrait.jpg" alt="Ryan O'Riordan website link" class="portfolio-thumbnail">
-					</a>
-					<h4>www.ryan-oriordan.com</h4>
-					<p>A website made for an independent musician.</p>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-4">
-					<a href="http://www.github.com/IambicTrochee">
-						<img src="img/gh-logo.png" alt="GitHub link" class="portfolio-thumbnail">
-					</a>
-					<h4>GitHub</h4>
-					<p>Other technical projects can be found on my GitHub profile.</p>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-4">
-					<img src="img/etc-thumbnail.png" alt="Ellipses" class="portfolio-thumbnail">
-					<h4>Future projects</h4>
-					<p>Links to future projects can be found here.</p>
-				</div>
-			</div> -->
 			<div class="wrapper">
 				<ul class="portfolio">
 					<li>
@@ -104,26 +75,23 @@
 		<div class="accordion-content">
 			<h1>Contact me</h1>
 			<div class="wrapper">
-				<form method="POST" id="contactform">
+				<form method="POST" id="contact">
 					<div class="form-group">
-						<input type="email" name="email" placeholder="Your email" class="form-control">
+						<input type="email" name="email" placeholder="Your email" class="form-control form-email">
 					</div>
 					<div class="form-group">
-						<textarea name="message" placeholder="Your message" class="form-control" rows="5"></textarea>
+						<textarea name="message" placeholder="Your message" class="form-control form-message" rows="5"></textarea>
 					</div>
 					<div class="form-group">
-						<button type="submit" class="btn btn-default">Send</button>
+						<button type="submit" class="btn">SEND</button>
 					</div>
 					<input type="text" name="_gotcha" style="display:none" />
 				</form>
 			</div>
 		</div>
 	</div>
-	<!-- Scripts: JQuery, Bootstrap, Custom -->
+	<!-- Scripts: JQuery, Custom -->
 	<script src="js/jquery-2.1.4.min.js"></script>
-	<!--
-	<script src="js/bootstrap.min.js"></script>
-	-->
 	<script src="js/script.js"></script>
 </body>
 

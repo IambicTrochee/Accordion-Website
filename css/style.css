@@ -148,21 +148,6 @@ h3 {
 
 
 
-/* Panel paragraph styling, vertically centered with flexbox
-.profile-summary > p {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	height: 20%;
-	padding: 20px;
-	margin: 0px;
-	border: 0px;
-}
-*/
-
-
-
-
 /* Mobile layout of content */
 @media screen and (max-width: 992px) {
 	ul {
@@ -185,10 +170,10 @@ h3 {
 
 /* Profile picture styling */
 #portrait {
+	border-radius: 15vh;	
+	width: 30vh;
+	height: 30vh;
 	display: block;
-	border-radius: 10vh;	
-	width: 20vh;
-	height: 20vh;
 	margin: auto;
 }
 
@@ -229,7 +214,39 @@ h3 {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+}
+
+.form-control {
+	border: 1px solid #CCCCCC;
+	border-radius: 4px;
+	padding-left: 3px;
+	margin-top: 3vh;
+	font-family: Raleway, sans-serif;
+}
+
+.form-email {
+	height: 3vh;
+}
+
+.form-message {
 	height: 10vh;
+}
+
+.btn {
+	height: 3.5vh;
+	width: 14vw;
+	font-family: Raleway, sans-serif;
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	border-radius: 4px;
+	margin: auto;
+	margin-top: 3vh;
+}
+
+.btn:hover {
+	color: #333333;
+	background-color: #E6E6E6;
+	border-color: #ADADAD;
 }
 
 
@@ -240,31 +257,30 @@ h3 {
 
 @media screen and (min-width: 992px) {
 	.accordion-content > h1 {
-		font-size: 20vh;
+		font-size: 20vh;		/* Larger header font */
 	}
 	ul {
 		list-style: none;
 		display: flex;
 		flex-wrap: wrap;
 		align-content: center;
-		max-height: 50.0vh;
 		padding: 0px;
 	}
 	li {
-		display: inline-block;
+		display: inline-block;	/* items display horizontally */
 		margin: auto;
 		padding: 0px;
 	}
-	.form-group {
-		width: 60vw;	/* Smaller width percentage */
-	}
-	/* Larger block height on larger screens */
-	.profile-summary > p {
-		height: 40%;
+	.profile-summary {
+		width: 60vw;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		height: 30vh;
 		margin: 0px;
+		border: 0px;
 	}
-
-	.picture {
-		height: 40%;
+	.form-group {
+		width: 60vw;			/* Smaller width percentage */
 	}
 }
