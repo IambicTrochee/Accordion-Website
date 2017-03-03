@@ -16,11 +16,5 @@ $(document).ready(function($) {
     //Re-opens closed toggles
     $(".accordion-toggle").not($(this)).slideDown('fast');
 
-    //Adapted from code by Davod Darnes on EnvatoTuts
-    //https://webdesign.tutsplus.com/tutorials/quick-tip-add-a-formspree-form-to-your-static-sites--cms-23870
-    //Enables Formspree and avoids posting email address in plaintext
-    var contact =  document.getElementById('contactform');
-    contact.setAttribute('action', 'https://formspree.io/' + 'sal' + 'lyluo' + 'ng.pu' + 'blic' + '@g' + 'mail' + '.' + 'com');
-
     });
 });
