@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-	<title>Title</title>
+	<title>Sally Luong</title>
 	<!-- Enables Formspreee -->
 	<meta name="referrer" content="origin">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +37,9 @@
 					</li>
 					<li>
 						<div class="profile-summary">
-							<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+							<p>I am an aspiring software developer with a strong interest in computational linguistics and data science. I aim to be the model of the modern Renaissance woman, with skills ranging from programming to design to writing. I am constantly learning, whether in a classroom setting or on my own initiative. I have built websites, run Monte Carlo simulations, produced musicals, built theatrical sets, written literary criticism, and transcribed speech in the International Phonetic Alphabet.<br /><br />
+							Despite the wide range of my experiences, there are certain skills that are always applicable no matter the environment. I’m a critical thinker and problem solver, whether budgets need balancing or code needs debugging. I’m a leader and a team player capable of delegating according to strengths and stepping in to compensate for weaknesses.<br /><br />
+							If my skills would be an asset to your project, or if you’d just like to chat, please do get in touch.</p>
 						</div>
 					</li>
 				</ul>
@@ -90,7 +93,14 @@
 			</div>
 		</div>
 	</div>
-	<!-- Scripts: JQuery, Custom -->
+	<!-- Scripts: Formspree, JQuery, Custom -->
+	<script>
+		//Adapted from code by David Darnes on EnvatoTuts
+		//https://webdesign.tutsplus.com/tutorials/quick-tip-add-a-formspree-form-to-your-static-sites--cms-23870
+		//Avoids uploading email address as plaintext
+    	var contactform = document.getElementById('contactform');
+    	contactform.setAttribute('action', '//formspree.io/' + 'sa'+ 'llyl' +'uong.p' +' ublic' + '@' + 'gmail' + '.' + 'com');
+	</script>
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
