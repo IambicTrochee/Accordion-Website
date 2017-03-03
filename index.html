@@ -78,7 +78,7 @@
 		<div class="accordion-content">
 			<h1>Contact me</h1>
 			<div class="wrapper">
-				<form method="POST" id="contact">
+				<form method="POST" id="contactform">
 					<div class="form-group">
 						<input type="email" name="email" placeholder="Your email" class="form-control form-email">
 					</div>
@@ -93,14 +93,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- Scripts: Formspree, JQuery, Custom -->
-	<script>
-		//Adapted from code by David Darnes on EnvatoTuts
-		//https://webdesign.tutsplus.com/tutorials/quick-tip-add-a-formspree-form-to-your-static-sites--cms-23870
-		//Avoids uploading email address as plaintext
-    	var contactform = document.getElementById('contactform');
-    	contactform.setAttribute('action', '//formspree.io/' + 'sa'+ 'llyl' +'uong.p' +' ublic' + '@' + 'gmail' + '.' + 'com');
-	</script>
+	<!-- Scripts: JQuery, Custom -->
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
